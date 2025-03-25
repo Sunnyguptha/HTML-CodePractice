@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+          <form style="background-color: black;">
+
+                    <fieldset>
+
+                              <legend style="text-align: center;  color:white;">Regisration Form </legend>
+                              <table style="border-spacing: 10px; color: white; ">
+
+                                        <tr>
+                                                  <td>
+                                                            <label for="FirstName"> First name</label> <br>
+                                                            <input type="text" id="FirstName" name="FirstName"
+                                                                      placeholder="Enter First name.." maxlength="10"
+                                                                      required>
+
+                                                  </td>
+                                                  <td>
+                                                            <label for="Lastname">Last Name </label> <br>
+                                                            <input type="text" id="Lastname" name=" Lastname"
+                                                                      placeholder="Enter Lastname.." maxlength="10"
+                                                                      required>
+                                                  </td>
+                                        </tr>
+
+                                        <tr>
+                                                  <td>
+                                                            <label for="Birthday">Birthday</label><br>
+                                                            <input type="date" name="Birthday" id="Birthday">
+                                                  </td>
+
+                                                  <td>
+                                                            <label>Gender</label> <br>
+
+                                                            <input type="radio" name="Gender" id="Gender1" value="Male">
+                                                            <label for="Gender1">Male</label>
+
+                                                            <input type="radio" name="Gender" id="Gender2"
+                                                                      value="Female">
+                                                            <label for="Gender2">Female</label>
+
+                                                  </td>
+                                        </tr>
+
+                                        <tr>
+                                                  <td>
+                                                            <label for="email">Email</label><br>
+                                                            <input type="email" name="email" id="email"
+                                                                      placeholder="Enter a Email..">
+                                                  </td>
+
+                                                  <td>
+                                                            <label for="number">Phone Number</label> <br>
+                                                            <input type="tel" name="number" id="number" placeholder="Enter phone number" pattern="[0-9]{10}" inputmode="numeric" maxlength="10" required>
+
+
+                                                  </td>
+                                        </tr>
+
+                                        <tr>
+                                                  <td>
+                                                            <label for="Subject">Subject</label> <br>
+                                                            <select name="Subject" id="Subject">
+
+
+                                                                      <option value="" disabled selected>Choose Option
+                                                                      </option>
+                                                                      <option value="java">Java</option>
+                                                                      <option value="Python">Python</option>
+
+                                                            </select>
+
+                                                  </td>
+                                        </tr>
+
+                                        <tr>
+                                                  <td>
+                                                            <input type="submit" value="Submit">
+                                                  </td>
+                                        </tr>
+                              </table>
+
+                    </fieldset>
+          </form>
+</body>
+
+</html>
