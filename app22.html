@@ -1,76 +1,116 @@
 <!DOCTYPE html>
 <html>
-          <head>
-                    <title>
-                             
-                    </title>
+<head>
+    <title>Personal Details Form</title>
 
-                    <style>
-                              label{
-                                        color: white;
-                                        background-color: blue;
-                                        display: inline-block;
-                              }
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: lightgray;
+            margin: 0;
+        }
 
-                              input{
-                                        border-color: darkblue;
-                              }
+        form {
+            background-color: darkblue;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px black;
+            width: 350px;
+        }
 
-                              form{
-                                        color: white;
-                              }
+        fieldset {
+            border: 2px solid white;
+            padding: 15px;
+            border-radius: 10px;
+        }
 
-                              #sub{
-                                        margin-left: 2cm;
-                              }
+        legend {
+            font-size: 18px;
+            font-weight: bold;
+        }
 
-                    </style>
-          </head>
+        label {
+            display: block;
+            margin: 8px 0 4px;
+        }
 
-          <body>
-                    <form >
-                              <fieldset>
-                                        
-                              <legend>Personl details</legend>
-                             <label >
-                              First Name: <input type="text" name="fname" placeholder="your name.."><br><br>
-                              </label>
-                              Last Name: <input type="text" name="lname" placeholder="your last name"><br><br>
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid white;
+        }
 
-                              <label >
-                              Gender: <input type="radio" name="gender">male 
-                    
-                             
+        input[type="radio"] {
+            width: auto;
+            margin-right: 5px;
+        }
 
-                              <input type="radio" name="gender">Female
-                              
-                    </label>
+        #sub {
+            width: 100%;
+            background-color: white;
+            color: darkblue;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
 
-                              <br><br> Email: <input type="email" name="email" placeholder="your email">
+        #sub:hover {
+            background-color: lightblue;
+        }
+    </style>
+</head>
 
-                              <br><br>Course: <select name="Course" name="Course" >
-                                        <option value="" disabled selected>Select Option</option>
-                                        <optgroup label="6 mon"></optgroup>
-                                        <option value="java">Java</option>
-                                        
-                                        <optgroup label=" 3 month"></optgroup>
-                                        <option value="c++">C++</option>
-                                        
-                                        <optgroup label=" 2 month"></optgroup>
-                                        <option value="python">Python</option>
-                                        
-                                        <optgroup label="1 month"></optgroup>
-                                        <option value="php">Python</option>
-                                        
-                                        <optgroup label=" 9 month"></optgroup>
-                                        <option value="dsa">Python</option>
+<body>
 
-                              
-                              </select><br><br>
-                              <input type="submit" value="Submit" id="sub">
-                              </fieldset>
+    <form>
+        <fieldset>
+            <legend>Personal Details</legend>
 
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="Your first name..">
 
-                    </form>
-          </body>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Your last name..">
+
+            <label>Gender:</label>
+            <input type="radio" name="gender" id="male">
+            <label for="male" style="display: inline;">Male</label>
+
+            <input type="radio" name="gender" id="female">
+            <label for="female" style="display: inline;">Female</label>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your email..">
+
+            <label for="course">Course:</label>
+            <select name="Course" id="course">
+                <option value="" disabled selected>Select Course</option>
+                <optgroup label="6 Month Course">
+                    <option value="java">Java</option>
+                </optgroup>
+                <optgroup label="3 Month Course">
+                    <option value="c++">C++</option>
+                </optgroup>
+                <optgroup label="2 Month Course">
+                    <option value="python">Python</option>
+                </optgroup>
+                <optgroup label="1 Month Course">
+                    <option value="php">PHP</option>
+                </optgroup>
+                <optgroup label="9 Month Course">
+                    <option value="dsa">DSA</option>
+                </optgroup>
+            </select>
+
+            <input type="submit" value="Submit" id="sub">
+        </fieldset>
+    </form>
+
+</body>
 </html>
